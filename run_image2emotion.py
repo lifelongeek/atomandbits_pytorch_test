@@ -27,7 +27,7 @@ img_transform = transforms.Compose([transforms.Resize((img_dim, img_dim), resamp
                                                   normalize])
 
 # get image data
-img_path='artemis/example_images/img2.png' # img0, img1, img2, img3
+img_path='example_images/img2.png' # img0, img1, img2, img3
 img = Image.open(img_path)
 img = img.convert('RGB')
 img = img_transform(img)
